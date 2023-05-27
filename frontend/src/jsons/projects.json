@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "title": "Open Space",
+    "img": "../../assets/imgs/projects/open_space.jpg",
+    "describes": "Um site para gerenciamento de tarefas.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Next.js",
+        "img": "../../assets/imgs/skills/next.svg"
+      },
+      {
+        "id": 2,
+        "title": "Styled Components",
+        "img": "../../assets/imgs/skills/styled-components.svg"
+      },
+      {
+        "id": 3,
+        "title": "Recoil",
+        "img": "../../assets/imgs/skills/recoil.svg"
+      },{
+        "id": 4,
+        "title": "TypeScript",
+        "img": "../../assets/imgs/skills/typescript.svg"
+      }
+    ],
+    "functionalities": [
+      {
+        "id": 1,
+        "functionalitie": "Filtrar tarefas."
+      },{
+        "id": 2,
+        "functionalitie": "Criar tarefas."
+      },{
+        "id": 3,
+        "functionalitie": "Apagar tarefas."
+      },{
+        "id": 4,
+        "functionalitie": "Editar tarefas."
+      },{
+        "id": 5,
+        "functionalitie": "Filtrar por colaboradores."
+      },{
+        "id": 6,
+        "functionalitie": "Enviar tarefa para colaborador."
+      }
+    ],
+    "corPrimary": "#595191",
+    "status": false
+  },
+  {
+    "id": 2,
+    "title": "Green Loop",
+    "img": "../../assets/imgs/projects/green_loop.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#07747F",
+    "status": false
+  },
+  {
+    "id": 3,
+    "title": "Analyzer Shark",
+    "img": "../../assets/imgs/projects/analyzer_shark.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#0984A2",
+    "status": false
+  },
+  {
+    "id": 4,
+    "title": "Attention Rare",
+    "img": "../../assets/imgs/projects/attention_rare.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#2B2B2B",
+    "status": false
+  },
+  {
+    "id": 5,
+    "title": "Advice Pro",
+    "img": "../../assets/imgs/projects/advice_pro.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#C61A52",
+    "status": false
+  },
+  {
+    "id": 6,
+    "title": "Messy",
+    "img": "../../assets/imgs/projects/messy.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#50894C",
+    "status": false
+  },
+  {
+    "id": 7,
+    "title": "Finance Block",
+    "img": "../../assets/imgs/projects/finance_block.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#663287",
+    "status": false
+  },
+  {
+    "id": 8,
+    "title": "Clear Sky",
+    "img": "../../assets/imgs/projects/clear_sky.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#BC933B",
+    "status": false
+  },
+  {
+    "id": 9,
+    "title": "Pandas",
+    "img": "../../assets/imgs/projects/pandas.jpg",
+    "describes": "",
+    "skills": [],
+    "corPrimary": "#FCFEFF",
+    "status": false
+  }
+]

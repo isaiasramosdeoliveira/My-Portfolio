@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação A partir do zero: HTML e CSS para projetos web",
+    "describe": "Ferramentas de desenvolvimento de layouts e publicação. Site responsivo para diferentes tamanhos de tela",
+    "hours": 51,
+    "status": true
+  },
+  {
+    "id": 2,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Pratique HTML e CSS em projetos Web",
+    "describe": "Os fundamentos para desenvolver uma página para Web.",
+    "hours": 63,
+    "status": true
+  },
+  {
+    "id": 3,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Desenvolva aplicações Web em JavaScript com tarefas concorrentes e orientadas a objetos",
+    "describe": "Realizar requisições simultâneas de forma assíncrona. Aplicações dinâmicas e interativas.",
+    "hours": 23,
+    "status": true
+  },
+  {
+    "id": 4,
+    "type": "backend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Aprenda a programar em JavaScript com foco no back-end",
+    "describe": "JavaScript fora do navegador e sistemas de back-end, APIs e bibliotecas.",
+    "hours": 74,
+    "status": true
+  },
+  {
+    "id": 5,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Explore React com JavaScript",
+    "describe": "Implementação de componentes reativos, roteamento da aplicação em React Router, e muitos outros.",
+    "hours": 65,
+    "status": true
+  },
+  {
+    "id": 6,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Melhore sua experiência de desenvolvimento com TypeScript",
+    "describe": "Melhores práticas para você utilizar TypeScript nas suas aplicações.",
+    "hours": 31,
+    "status": true
+  },
+  {
+    "id": 7,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação CSS: aprofunde em estilos",
+    "describe": "Construção de aplicações com design responsivo e estilizados com CSS.",
+    "hours": 36,
+    "status": true
+  },
+  {
+    "id": 8,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Desenvolva aplicações Web com JavaScript",
+    "describe": "Transformar páginas estáticas em dinâmicas e conhecer os frameworks mais famosos do mercado.",
+    "hours": 60,
+    "status": true
+  },
+  {
+    "id": 9,
+    "type": "backend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação APIs com Node.js e Express",
+    "describe": "Utilizar o Node.js em conjunto com o framework Express.",
+    "hours": 80,
+    "status": false
+  },
+  {
+    "id": 10,
+    "type": "backend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Full stack JavaScript: crie um projeto com React e Node.js",
+    "describe": "Desenvolvimento de uma API em Node.js utilização de bancos de dados e integração da API com a aplicação React.",
+    "hours": 28,
+    "status": true
+  },
+  {
+    "id": 11,
+    "type": "datascience",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Iniciando com Engenharia de Dados",
+    "describe": "Linux / Python / Airflow / Apache Beam",
+    "hours": 86,
+    "status": false
+  },
+  {
+    "id": 12,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/ifrs.png",
+    "name": "Programador Web",
+    "describe": "HTML / CSS / Lógica de programação / JavaScript / Banco de dados",
+    "hours": 200,
+    "status": true
+  },
+  {
+    "id": 13,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação React com TypeScript",
+    "describe": "Otimizar o seu código, identificando e prevenindo erros durante o desenvolvimento.",
+    "hours": 75,
+    "status": true
+  },
+  {
+    "id": 14,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Gerencie aplicações React com Typescript",
+    "describe": "Otimizar o seu código, identificando e prevenindo erros durante o desenvolvimento.",
+    "hours": 83,
+    "status": true
+  },
+  {
+    "id": 15,
+    "type": "frontend",
+    "img": "./assets/imgs/courses/alura.jpg",
+    "name": "Formação Gerencie estados em React com Redux",
+    "describe": "Redux / Redux toolkit / Redux Saga / Redux Thunk",
+    "hours": 43,
+    "status": true
+  }
+]

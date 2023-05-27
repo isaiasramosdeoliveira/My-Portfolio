@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "type": "frontend",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Básico",
+        "groups": [
+          {
+            "id": 1,
+            "title": "HTML",
+            "img": "./assets/imgs/skills/html.png",
+            "link": "https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics"
+          },
+          {
+            "id": 2,
+            "title": "CSS",
+            "img": "./assets/imgs/skills/css-3.png",
+            "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+          },
+          {
+            "id": 3,
+            "title": "JavaScript",
+            "img": "./assets/imgs/skills/js.png",
+            "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+          },
+          {
+            "id": 4,
+            "title": "Node.js",
+            "img": "./assets/imgs/skills/node-js.png",
+            "link": "https://nodejs.org/en"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Bibliotecas",
+        "groups": [
+          {
+            "id": 1,
+            "title": "React",
+            "img": "./assets/imgs/skills/reactjs.svg",
+            "link": "https://react.dev/"
+          },
+          {
+            "id": 2,
+            "title": "Redux",
+            "img": "./assets/imgs/skills/redux.svg",
+            "link": "https://redux.js.org/"
+          },
+          {
+            "id": 3,
+            "title": "Styled Components",
+            "img": "./assets/imgs/skills/styled-components.svg",
+            "link": "https://styled-components.com/"
+          },
+          {
+            "id": 4,
+            "title": "Recoil",
+            "img": "./assets/imgs/skills/recoil.svg",
+            "link": "https://recoiljs.org/"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Frameworks",
+        "groups": [
+          {
+            "id": 1,
+            "title": "Next",
+            "img": "./assets/imgs/skills/next.svg",
+            "link": "https://nextjs.org/"
+          },
+          {
+            "id": 2,
+            "title": "Bootstrap",
+            "img": "./assets/imgs/skills/bs.svg",
+            "link": "https://getbootstrap.com/"
+          },
+          {
+            "id": 3,
+            "title": "Tailwind",
+            "img": "./assets/imgs/skills/tailwindcss.svg",
+            "link": "https://tailwindcss.com/"
+          },{
+            "id": 4,
+            "title": "Jest",
+            "img": "./assets/imgs/skills/jest.svg",
+            "link": "https://jestjs.io/pt-BR/"
+          },{
+            "id": 5,
+            "title": "Testing Library ",
+            "img": "./assets/imgs/skills/Testing-Library.svg",
+            "link": "https://testing-library.com/"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Ferramentas",
+        "groups": [
+          {
+            "id": 1,
+            "title": "Git",
+            "img": "./assets/imgs/skills/git.svg",
+            "link": "https://git-scm.com/"
+          },
+          {
+            "id": 2,
+            "title": "TypeScript",
+            "img": "./assets/imgs/skills/typescript.svg",
+            "link": "https://www.typescriptlang.org/"
+          },
+          {
+            "id": 3,
+            "title": "Sass",
+            "img": "./assets/imgs/skills/sass.png",
+            "link": "https://sass-lang.com/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "backend",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Básico",
+        "groups": [
+          {
+            "id": 1,
+            "title": "Python",
+            "img": "./assets/imgs/skills/python.svg",
+            "link": "https://www.python.org/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "datascience",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Básico",
+        "groups": [
+          {
+            "id": 1,
+            "title": "MongoDB",
+            "img": "./assets/imgs/skills/mongodb.svg",
+            "link": "https://www.mongodb.com/"
+          }
+        ]
+      }
+    ]
+  }
+]
