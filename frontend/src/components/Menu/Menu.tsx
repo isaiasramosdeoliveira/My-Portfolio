@@ -2,6 +2,7 @@ import React, { useState, useEffect, memo, lazy, Suspense } from "react";
 import styled from "styled-components";
 import { FaUser, FaHome } from "react-icons/fa";
 import { BsFillCaretUpFill } from "react-icons/bs";
+import { AiFillSetting } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
 import { screeX } from "global/utils/screen";
 import logo from "assets/imgs/logo.png";
@@ -139,7 +140,7 @@ const Menu = () => {
   });
   return (
     <Container id="Menu">
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={<Loading />}>
         <ul className="anchors">
           <li id="expend">
             <button
@@ -169,6 +170,9 @@ const Menu = () => {
           </Link>
           <Link to="/contacts" name="Contatos">
             <BsFillTelephoneFill className="icon" />
+          </Link>
+          <Link to="/settings" name=" Configurações">
+            <AiFillSetting className="icon" />
           </Link>
         </ul>
       </Suspense>

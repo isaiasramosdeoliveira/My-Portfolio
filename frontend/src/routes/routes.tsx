@@ -10,6 +10,7 @@ import Button from "components/Button/Button";
 import error from "../assets/imgs/404.png";
 import styled from "styled-components";
 import PageProject from "pages/PageProject/PageProject";
+import PageSettings from "pages/PageSettings/PageSettings";
 
 const Error = styled.section`
   display: flex;
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
       { path: "/projects/:id", element: <PageProject /> },
       { path: "/skills", element: <PageSkills /> },
       { path: "/contacts", element: <PageContacts /> },
+      { path: "/settings", element: <PageSettings /> },
       { path: "*", element: <PageError /> },
     ],
   },
