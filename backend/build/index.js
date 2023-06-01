@@ -11,7 +11,7 @@ dbConnect_1.default.once("open", () => console.log("Connected database"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 (0, router_1.default)(app);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 app.listen(port, () => {
     console.log(`http://localhost:${port}`);
 });
