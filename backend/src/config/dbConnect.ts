@@ -1,6 +1,16 @@
 import "dotenv/config";
 import mongoose from "mongoose";
-if (process.env.URI != undefined) mongoose.connect(process.env.URI);
-const db = mongoose.connection;
-export default db;
+
+async function connect(){
+    try{
+        mongoose.set("strictQuery", true);
+        if (process.env.URI != undefined) await mongoose.connect(process.env.URI);
+        console.log("Connected database");
+        
+    } catch(err){
+        console.log(err);
+    }
+}
+
+export default connect;
 
