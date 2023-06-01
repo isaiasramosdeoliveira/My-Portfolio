@@ -44,8 +44,8 @@ const Container = styled.div`
   }
   .card {
     ${center}
-    min-width: 250px;
-    height: 300px;
+    min-width: 255px;
+    height: 310px;
     border-radius: 10px;
     border-top: 1px solid
       ${({ theme }) => theme.content.pageProjects.projects.top};
