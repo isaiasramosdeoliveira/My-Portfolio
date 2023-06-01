@@ -21,14 +21,13 @@ const Container = styled.div`
     font-size: 16px;
   }
   .count {
-    width: 50px;
-    height: 50px;
-    align-items: flex-end;
-    justify-content: flex-end;
-    bottom: 0;
-    right: 0;
-    padding: 18px 15px 15px 10px;
-    border-radius: 100px 0px 15px 0px;
+    ${center}
+    width: 45px;
+    height: 45px;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 100px;
   }
   .icon {
     ${center}
@@ -87,7 +86,7 @@ const Courses = ({ text, type, img }: ICourses) => {
               <img src={img} alt="" />
             </div>
             <p className="card">{type}</p>
-            <div className="count">5</div>
+            <div className="count">10</div>
           </Button>
         </Link>
       </Suspense>
