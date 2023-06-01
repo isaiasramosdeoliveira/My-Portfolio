@@ -21,7 +21,6 @@ CourseController.getCourses = (req, res) => __awaiter(void 0, void 0, void 0, fu
     try {
         const response = yield Course_1.default.find();
         res.status(200).json(response);
-        return response;
     }
     catch (err) {
         res.status(500).json({ message: "Erro interno no servidor." });

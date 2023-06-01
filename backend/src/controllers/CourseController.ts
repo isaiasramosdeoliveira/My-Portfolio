@@ -7,7 +7,6 @@ class CourseController {
         try {
             const response = await Course.find();
             res.status(200).json(response);
-            return response;
         } catch (err) {
             res.status(500).json({ message: "Erro interno no servidor." });
         }
