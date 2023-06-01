@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 
 async function connect(){
     try{
-        mongoose.set("strictQuery", true);
         if (process.env.URI != undefined) await mongoose.connect(process.env.URI);
         console.log("Connected database");
         
