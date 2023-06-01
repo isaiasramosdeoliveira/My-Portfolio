@@ -1,87 +1,95 @@
 import { center } from "global/utils/center";
-import React, {lazy, Suspense} from "react";
-import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
+import React, { lazy, Suspense } from "react";
 import styled from "styled-components";
-import { transition200 } from "global/utils/transitions";
-import { ICourse } from "global/interfaces/interfaces";
 import Loading from "components/Loading/Loading";
-const Curse = lazy(() => import("./Course/Course"));
 const Button = lazy(() => import("components/Button/Button"));
-
+const Link = lazy(() => import("components/Link/Link"));
 
 const Container = styled.div`
+  ${center}
   height: 90%;
-  .btn {
+  .count,
+  .icon {
     ${center}
+    position: absolute;
+    background: ${({ theme }) => theme.content.pageCertification.course.bg};
+    border-left: 1px solid
+      ${({ theme }) => theme.content.pageCertification.course.top};
+    border-top: 1px solid
+      ${({ theme }) => theme.content.pageCertification.course.top};
+    box-shadow: ${({ theme }) => theme.content.pageCertification.course.shadow};
     font-size: 16px;
-    gap: 15px;
-    width: 350px;
-    margin: 0px 10px;
   }
-  .courses {
-    ${transition200}
-    overflow-x: hidden;
+  .count {
+    width: 50px;
+    height: 50px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    bottom: 0;
+    right: 0;
+    padding: 18px 15px 15px 10px;
+    border-radius: 100px 0px 15px 0px;
+  }
+  .icon {
     ${center}
-    align-items:start;
-    width: 350px;
-    margin: 10px;
-    height: 100%;
-    padding-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 10px;
+    border-radius: 100px;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 100px;
+    }
+  }
+  .card {
+    ${center}
+    min-width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    border-top: 1px solid
+      ${({ theme }) => theme.content.pageProjects.projects.top};
+    background: ${({ theme }) =>
+      theme.content.pageProjects.projects.bgDescribe};
+    box-shadow: ${({ theme }) => theme.content.pageCertification.course.shadow};
+  }
+  .btn {
+    border-top: 1px solid
+      ${({ theme }) => theme.content.pageCertification.course.top};
+    border-bottom: 1px solid
+      ${({ theme }) => theme.content.pageCertification.course.bottom};
+    color: ${({ theme }) => theme.content.pageCertification.course.letter};
+    background: ${({ theme }) => theme.content.pageCertification.course.bg};
+    font-weight: 600;
+    position: relative;
+    ${center}
+    font-size: 18px;
+    gap: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 0px 10px;
   }
 `;
 interface ICourses {
   text: string;
-  setElement(element: boolean): void
-  element?: boolean;
-  dice?: any;
+  type: string;
+  img: string
 }
 
-const Courses = ({ text, setElement, element, dice }: ICourses) => {
-  const handleActiveCurses = (e: any) => {
-    setElement(element == false ? true : false);
-    const dice = e.target.parentElement as HTMLDivElement;
-    const courses = dice.querySelectorAll(".course") as NodeListOf<HTMLElement>;
-    courses.forEach((course) => {
-      setTimeout(() => {
-        course.setAttribute("data-animation", "none");
-        course.style.display = "none";
-      });
-    });
-    let mult = 0;
-    courses.forEach((course) => {
-      setTimeout(() => {
-        course.setAttribute("data-animation", "active");
-        course.style.display = "block";
-      }, mult);
-      mult += 60;
-    });
-  };
+const Courses = ({ text, type, img }: ICourses) => {
   return (
     <Container>
-      <Suspense fallback={<Loading/>}>
-        <Button
-          functions={(e: EventTarget) => handleActiveCurses(e)}
-          className={`${"btn"}`}
-          text={text}
-        >
-          {element ? <AiFillCaretUp /> : <AiFillCaretDown />}
-        </Button>
-        <div
-          style={element ? { display: "flex" } : { display: "none" }}
-          className="courses"
-        >
-          {dice?.map((course: ICourse) => (
-            <Curse
-              key={course.id}
-              img={course.img}
-              type={course.type}
-              name={course.name}
-              describe={course.describe}
-              hours={course.hours}
-              status={course.status}
-            />
-          ))}
-        </div>
+      <Suspense fallback={<Loading />}>
+        <Link to={`/certification?page=${type}`}>
+          <Button className={`${"btn"}`}>
+            <div className="icon">
+              <img src={img} alt="" />
+            </div>
+            <p className="card">{type}</p>
+            <div className="count">5</div>
+          </Button>
+        </Link>
       </Suspense>
     </Container>
   );

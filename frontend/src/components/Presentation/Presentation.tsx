@@ -38,7 +38,7 @@ const Container = styled.div`
 `;
 
 interface IPresentation {
-  title: string;
+  title: string | null;
   describe: string;
   icon?: string | undefined
   firstDescribeIcon?: string;

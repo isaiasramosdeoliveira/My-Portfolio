@@ -1,6 +1,9 @@
 import { center } from "global/utils/center";
-import React, { useState, Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 import styled from "styled-components";
+import frontend from "../../assets/imgs/frontend.png"
+import backend from "../../assets/imgs/backend.png";
+import datascience from "../../assets/imgs/datascience.png";
 import {
   media_medio_desktop,
   media_mini_tablet,
@@ -8,7 +11,6 @@ import {
   media_tablet,
 } from "global/media-query/media-query-pageCertification";
 import { transition200 } from "global/utils/transitions";
-import getCourses from "ts/courses/getCourses";
 import Loading from "components/Loading/Loading";
 const Presentation = lazy(() => import("components/Presentation/Presentation"));
 const Curses = lazy(() => import("pages/PageCertification/Curses/Courses"));
@@ -57,38 +59,17 @@ const Container = styled.section`
 `;
 
 const PageCertification = () => {
-  const [frontend, setFrontend] = useState(false);
-  const [backend, setBackend] = useState(false);
-  const [datascience, setDatascience] = useState(false);
   return (
     <Container>
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={<Loading />}>
         <Presentation
           title="Certificações"
-          describe="Alguns dos meus certificados para comprovar meu domínio em tal tecnologia."
-          icon="Andamento"
-          firstDescribeIcon="Concluído"
-          secondDescribeIcon="Andamento"
+          describe="Escolha um tópico para ver todos os certificados."
         />
         <div className="dice_of_courses">
-          <Curses
-            text="Front-end"
-            dice={getCourses("frontend")}
-            setElement={setFrontend}
-            element={frontend}
-          />
-          <Curses
-            text="Back-end"
-            dice={getCourses("backend")}
-            setElement={setBackend}
-            element={backend}
-          />
-          <Curses
-            text="Data Science"
-            dice={getCourses("datascience")}
-            setElement={setDatascience}
-            element={datascience}
-          />
+          <Curses text="Front-end" type="Front-end" img={frontend} />
+          <Curses text="Back-end" type="Back-end" img={backend} />
+          <Curses text="Data Science" type="Data Science" img={datascience} />
         </div>
       </Suspense>
     </Container>

@@ -11,6 +11,7 @@ import error from "../assets/imgs/404.png";
 import styled from "styled-components";
 import PageProject from "pages/PageProject/PageProject";
 import PageSettings from "pages/PageSettings/PageSettings";
+import PageBase from "pages/PageCertification/PageBase/PageBase";
 
 const Error = styled.section`
   display: flex;
@@ -56,6 +57,7 @@ const router = createBrowserRouter([
       { path: "/skills", element: <PageSkills /> },
       { path: "/contacts", element: <PageContacts /> },
       { path: "/settings", element: <PageSettings /> },
+      { path: "/certification/page?", element: <PageBase /> },
       { path: "*", element: <PageError /> },
     ],
   },
