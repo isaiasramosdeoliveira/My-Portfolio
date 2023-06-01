@@ -1,15 +1,17 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "strict": true,
-        "esModuleInterop": true,
-        "outDir": "./build",
-        "rootDir": "./src",
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Recommended",
-    "exclude": ["node_modules"]
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./build",
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended",
+  "exclude": [
+    "node_modules"
+  ]
 }
