@@ -2,12 +2,13 @@ import 'dotenv/config';
 import express, {Express} from "express";
 import db from './config/dbConnect';
 import routes from './routes/router';
+import connect from './config/dbConnect';
 
-db.once("open", () => console.log("Connected database"));
 
 const app:Express = express();
 app.use(express.json());
 routes(app);
+connect();
 
 const port = process.env.PORT || 8000
 
