@@ -54,6 +54,7 @@ const Container = styled.div`
     box-shadow: ${({ theme }) => theme.content.pageCertification.course.shadow};
   }
   .btn {
+    transition: all 200ms ease-in-out;
     border-top: 1px solid
       ${({ theme }) => theme.content.pageCertification.course.top};
     border-bottom: 1px solid
@@ -68,12 +69,15 @@ const Container = styled.div`
     width: 300px;
     height: 350px;
     margin: 0px 10px;
+    &:hover {
+      transform: translateY(-20px);
+    }
   }
 `;
 interface ICourses {
   text: string;
   type: string;
-  img: string
+  img: string;
 }
 
 const Courses = ({ text, type, img }: ICourses) => {
