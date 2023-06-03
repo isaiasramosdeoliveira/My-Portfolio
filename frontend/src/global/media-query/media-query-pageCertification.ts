@@ -106,6 +106,7 @@ export const media_mini_tablet = `
 // Media para mobile
 export const media_mobile = `
 @media (max-width: 415px) {
+  height: 90%;
   padding:0px;
   .btn {
     ${center}
@@ -120,14 +121,12 @@ export const media_mobile = `
     height: 100%;
   }
   .dice_of_courses{
-    overflow: hidden;
     justify-content: center;
     align-items: center;
     margin:auto;
     gap: 15px;
     padding: 10px;
     flex: 1 0 350px;
-    height: auto;
     .btn {
       position: sticky;
     }

@@ -17,6 +17,7 @@ const Presentation = lazy(() => import("components/Presentation/Presentation"));
 const Curses = lazy(() => import("pages/PageCertification/Curses/Courses"));
 
 const Container = styled.section`
+  height: 100%;
   .presentation {
     ${center}
     padding-bottom:15px;

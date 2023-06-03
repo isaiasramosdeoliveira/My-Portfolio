@@ -1,3 +1,5 @@
+import { center } from "global/utils/center"
+
 // Media desktop medio
 export const media_medio_desktop = `
 @media (max-width: 1070px) {
@@ -39,6 +41,7 @@ export const media_mobile = `
     }
   }
   .projects{
+    ${center}
   }
 }
 `

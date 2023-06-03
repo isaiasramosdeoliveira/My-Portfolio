@@ -31,18 +31,6 @@ const Container = styled.section`
       min-width: 260px;
       flex-grow:1;
     }
-    &::before {
-      position: fixed;
-      width: 100%;
-      content: "";
-      padding: 15px;
-      margin-top: -10px;
-      background: linear-gradient(
-        to bottom,
-        ${({ theme }) => theme.content.bg},
-        transparent 40%
-      );
-    }
   }
   ${media_medio_desktop}
   ${media_tablet}
