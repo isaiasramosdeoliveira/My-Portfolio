@@ -24,11 +24,11 @@ const Container = styled.section`
     ${transition200}
     align-items:start;
     overflow-x: hidden;
+    padding: 20px 0px 100px 15px;
     height: 95%;
-    padding: 10px 40px 100px 40px;
     width: 100%;
     .project {
-      min-width: 260px;
+      min-width: 275px;
       flex-grow:1;
     }
   }
