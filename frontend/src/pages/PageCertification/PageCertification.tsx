@@ -17,7 +17,6 @@ const Presentation = lazy(() => import("components/Presentation/Presentation"));
 const Curses = lazy(() => import("pages/PageCertification/Curses/Courses"));
 
 const Container = styled.section`
-  height: 100%;
   .presentation {
     ${center}
     padding-bottom:15px;
@@ -45,13 +44,12 @@ const Container = styled.section`
   }
   .dice_of_courses {
     ${center}
-    flex-wrap:nowrap;
+    overflow-x: hidden;
+    padding: 40px 100px 40px;
+    display: flex;
+    flex-wrap: wrap;
     ${transition200}
-    overflow: hidden;
-    align-items: start;
-    padding: 10px 0px;
-    width: 100%;
-    height: 100vh;
+    height:75vh;
   }
   ${media_medio_desktop}
   ${media_tablet}
