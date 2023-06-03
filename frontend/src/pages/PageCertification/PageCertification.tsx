@@ -1,7 +1,7 @@
 import { center } from "global/utils/center";
 import React, { Suspense, lazy } from "react";
 import styled from "styled-components";
-import frontend from "../../assets/imgs/frontend.png"
+import frontend from "../../assets/imgs/frontend.png";
 import backend from "../../assets/imgs/backend.png";
 import datascience from "../../assets/imgs/datascience.png";
 import {
@@ -17,6 +17,7 @@ const Presentation = lazy(() => import("components/Presentation/Presentation"));
 const Curses = lazy(() => import("pages/PageCertification/Curses/Courses"));
 
 const Container = styled.section`
+  height: 100vh;
   .presentation {
     ${center}
     padding-bottom:15px;
