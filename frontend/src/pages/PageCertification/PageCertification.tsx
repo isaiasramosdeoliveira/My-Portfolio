@@ -12,6 +12,7 @@ import {
 } from "global/media-query/media-query-pageCertification";
 import { transition200 } from "global/utils/transitions";
 import Loading from "components/Loading/Loading";
+import countCourses from "ts/courses/countCourses";
 const Presentation = lazy(() => import("components/Presentation/Presentation"));
 const Curses = lazy(() => import("pages/PageCertification/Curses/Courses"));
 
@@ -67,9 +68,24 @@ const PageCertification = () => {
           describe="Escolha um tópico para ver todos os certificados."
         />
         <div className="dice_of_courses">
-          <Curses text="Front-end" type="Front-end" img={frontend} />
-          <Curses text="Back-end" type="Back-end" img={backend} />
-          <Curses text="Data Science" type="Data Science" img={datascience} />
+          <Curses
+            text="Front-end"
+            type="Front-end"
+            img={frontend}
+            count={countCourses("frontend")}
+          />
+          <Curses
+            text="Back-end"
+            type="Back-end"
+            img={backend}
+            count={countCourses("backend")}
+          />
+          <Curses
+            text="Data Science"
+            type="Data Science"
+            img={datascience}
+            count={countCourses("datascience")}
+          />
         </div>
       </Suspense>
     </Container>

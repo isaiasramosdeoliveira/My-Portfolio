@@ -78,9 +78,10 @@ interface ICourses {
   text: string;
   type: string;
   img: string;
+  count: number
 }
 
-const Courses = ({ text, type, img }: ICourses) => {
+const Courses = ({ text, type, img, count }: ICourses) => {
   return (
     <Container>
       <Suspense fallback={<Loading />}>
@@ -90,7 +91,7 @@ const Courses = ({ text, type, img }: ICourses) => {
               <img src={img} alt="" />
             </div>
             <p className="card">{type}</p>
-            <div className="count">10</div>
+            <div className="count">{count}</div>
           </Button>
         </Link>
       </Suspense>

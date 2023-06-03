@@ -5,9 +5,8 @@ import { center } from "global/utils/center";
 import { top } from "global/animations/animations";
 import { ICourse } from "global/interfaces/interfaces";
 
-const Curse = styled.div`
+const Course = styled.div`
   ${top}
-  display:none;
   position: relative;
   background: ${({ theme }) => theme.content.pageCertification.course.bg};
   box-shadow: ${({ theme }) => theme.content.pageCertification.course.shadow};
@@ -69,7 +68,7 @@ const Curse = styled.div`
 `;
 export default ({ id, img, name, describe, hours, status }: ICourse) => {
   return (
-    <Curse key={id} data-animation={false} className="course">
+    <Course key={id} data-animation={false} className="course">
       <img src={img} alt={name} />
       <h4>{name}</h4>
       <div className="describe">{describe}</div>
@@ -81,6 +80,6 @@ export default ({ id, img, name, describe, hours, status }: ICourse) => {
           <FcOk className="icon" />
         )}
       </div>
-    </Curse>
+    </Course>
   );
 };

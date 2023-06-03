@@ -17,16 +17,19 @@ const Container = styled.section`
   height: 100%;
   overflow: hidden;
   .projects {
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
     position: relative;
-    ${center}
     ${transition200}
     align-items:start;
     overflow-x: hidden;
     height: 95%;
     padding: 10px 40px 100px 40px;
     width: 100%;
-    .project:nth-last-child(1) {
-      margin-right: auto;
+    .project {
+      min-width: 260px;
+      flex-grow:1;
     }
     &::before {
       position: fixed;
