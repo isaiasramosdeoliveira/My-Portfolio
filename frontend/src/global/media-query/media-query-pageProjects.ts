@@ -42,6 +42,9 @@ export const media_mobile = `
   }
   .projects{
     ${center}
+    .project{
+      min-width: 300px;
+    }
   }
 }
 `

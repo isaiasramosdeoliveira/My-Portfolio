@@ -125,7 +125,7 @@ export const media_mobile = `
     align-items: center;
     margin:auto;
     gap: 15px;
-    padding: 10px;
+    padding: 20px;
     flex: 1 0 350px;
     .btn {
       position: sticky;
