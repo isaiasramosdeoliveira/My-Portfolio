@@ -46,7 +46,6 @@ const Container = styled.section`
   .dice_of_courses {
     ${center}
     overflow-x: hidden;
-    padding: 40px 100px 40px;
     display: flex;
     flex-wrap: wrap;
     ${transition200}

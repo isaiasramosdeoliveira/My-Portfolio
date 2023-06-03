@@ -1,3 +1,4 @@
+import "normalize.css";
 import Loading from "components/Loading/Loading";
 import React, {lazy, Suspense} from "react";
 import { Outlet } from "react-router-dom";
