@@ -50,7 +50,7 @@ const Container = styled.section`
     align-items: start;
     padding: 10px 0px;
     width: 100%;
-    height: 90%;
+    height: 100vh;
   }
   ${media_medio_desktop}
   ${media_tablet}
