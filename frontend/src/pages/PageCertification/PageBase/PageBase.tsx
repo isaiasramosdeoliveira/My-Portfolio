@@ -1,13 +1,15 @@
-import Presentation from "components/Presentation/Presentation";
 import { center } from "global/utils/center";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import { BsFillReplyFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import getCourses from "ts/courses/getCourses";
 import { ICourse } from "global/interfaces/interfaces";
-import Course from "../Curses/Course/Course";
+import Loading from "components/Loading/Loading";
+
+const Presentation = lazy(() => import("components/Presentation/Presentation"));
+const Course = lazy(() => import("../Curses/Course/Course"));
 const Container = styled.section`
   .presentation {
     ${center}
@@ -80,33 +82,35 @@ const PageBase = () => {
   }, []);
   return (
     <Container>
-      <Presentation
-        title={type}
-        describe={`Alguns dos meus certificados de ${type} para comprovar meu domínio em tal tecnologia.`}
-      />
-      <div className="describes">
-        <div className="describe">
-          {" "}
-          <p>Certificações / {type}</p>
-          <BsFillReplyFill onClick={() => navigate(-1)} className="icon" />
+      <Suspense fallback={<Loading />}>
+        <Presentation
+          title={type}
+          describe={`Alguns dos meus certificados de ${type} para comprovar meu domínio em tal tecnologia.`}
+        />
+        <div className="describes">
+          <div className="describe">
+            {" "}
+            <p>Certificações / {type}</p>
+            <BsFillReplyFill onClick={() => navigate(-1)} className="icon" />
+          </div>
         </div>
-      </div>
-      <div className="dice_of_courses">
-        {dice.map(
-          ({ id, describe, hours, name, img, status, type }: ICourse) => (
-            <Course
-              key={id}
-              id={id}
-              img={img}
-              name={name}
-              describe={describe}
-              hours={hours}
-              status={status}
-              type={type}
-            />
-          )
-        )}
-      </div>
+        <div className="dice_of_courses">
+          {dice.map(
+            ({ id, describe, hours, name, img, status, type }: ICourse) => (
+              <Course
+                key={id}
+                id={id}
+                img={img}
+                name={name}
+                describe={describe}
+                hours={hours}
+                status={status}
+                type={type}
+              />
+            )
+          )}
+        </div>
+      </Suspense>
     </Container>
   );
 };
