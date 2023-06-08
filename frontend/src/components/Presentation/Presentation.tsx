@@ -7,6 +7,8 @@ import { media_medio_desktop, media_tablet, media_mini_tablet, media_mobile } fr
 const Container = styled.div`
   ${center}
   background: ${({ theme }) => theme.content.pageCertification.course.bg};
+  border-bottom: 1px solid
+    ${({ theme }) => theme.content.pageProjects.projects.top};
   padding-bottom: 15px;
   width: 100%;
   padding: 20px 40px;

@@ -10,6 +10,7 @@ const Presentation = lazy(() => import("components/Presentation/Presentation"));
 const Container = styled.section`
   height: 100%;
   overflow-x: hidden;
+  padding-bottom: 100px;
   .dice {
     padding-top: 10px;
     width: 100%;
