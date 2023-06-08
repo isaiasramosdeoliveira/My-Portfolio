@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from "react";
+import React, { lazy, Suspense } from "react";
 const Button = lazy(() => import("components/Button/Button"));
 import { center } from "global/utils/center";
 import { Link } from "react-router-dom";
@@ -77,10 +77,10 @@ const Container = styled.div`
   }
 `;
 
-const Projects = ({ id, title, status, img }: IProjects) => {
+const Projects = ({ id, title, status, img, link }: IProjects) => {
   return (
     <Container className={`${"project"}`}>
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={<Loading />}>
         <div className="title">
           <h2>{title}</h2>
           {status ? (
@@ -92,7 +92,9 @@ const Projects = ({ id, title, status, img }: IProjects) => {
         <img src={img} alt={title} />
         <div className="btns">
           <Button className={`${"btn"}`}>
-            <a href="">Ver projeto</a>
+            <a href={link} target="_blank" rel="noreferrer">
+              Ver projeto
+            </a>
           </Button>
           <Button className={`${"btn"}`}>
             <Link to={`/projects/${id}`}>Descrição</Link>

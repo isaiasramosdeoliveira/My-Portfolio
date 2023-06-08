@@ -23,6 +23,7 @@ export interface IProjects {
   skills?: Array<object>
   functionalities?: Array<object>
   img?: string,
+  link?: string
 }
 
 export interface IMessage{

@@ -47,16 +47,71 @@
       }
     ],
     "corPrimary": "#595191",
-    "status": false
+    "status": false,
+    "link": ""
   },
   {
     "id": 2,
     "title": "Green Loop",
     "img": "../../assets/imgs/projects/green_loop.jpg",
-    "describes": "",
-    "skills": [],
+    "describes": "Um site de venda e serviços de jardinagem.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "React",
+        "img": "../../assets/imgs/skills/reactjs.svg"
+      },
+      {
+        "id": 2,
+        "title": "Emotion",
+        "img": "../../assets/imgs/skills/emotion.png"
+      },
+      {
+        "id": 3,
+        "title": "Redux",
+        "img": "../../assets/imgs/skills/redux.svg"
+      },
+      {
+        "id": 4,
+        "title": "TypeScript",
+        "img": "../../assets/imgs/skills/typescript.svg"
+      },
+      {
+        "id": 5,
+        "title": "Nest.js",
+        "img": "../../assets/imgs/skills/nest.svg"
+      },
+      {
+        "id": 6,
+        "title": "PostgreSQL",
+        "img": "../../assets/imgs/skills/postgresql.svg"
+      }
+    ],
+    "functionalities": [
+      {
+        "id": 1,
+        "functionalitie": "Contrato de serviços"
+      },
+      {
+        "id": 2,
+        "functionalitie": "Compra de itens"
+      },
+      {
+        "id": 3,
+        "functionalitie": "Rastrear entregas"
+      },
+      {
+        "id": 4,
+        "functionalitie": "Fazer login"
+      },
+      {
+        "id": 5,
+        "functionalitie": "Gerenciamento de pagamentos"
+      }
+    ],
     "corPrimary": "#07747F",
-    "status": false
+    "status": false,
+    "link": "https://green-loop.vercel.app/"
   },
   {
     "id": 3,
@@ -65,7 +120,8 @@
     "describes": "",
     "skills": [],
     "corPrimary": "#0984A2",
-    "status": false
+    "status": false,
+    "link": ""
   },
   {
     "id": 4,
@@ -74,7 +130,8 @@
     "describes": "",
     "skills": [],
     "corPrimary": "#2B2B2B",
-    "status": false
+    "status": false,
+    "link": ""
   },
   {
     "id": 5,
@@ -83,7 +140,8 @@
     "describes": "",
     "skills": [],
     "corPrimary": "#C61A52",
-    "status": false
+    "status": false,
+    "link": ""
   },
   {
     "id": 6,
@@ -92,7 +150,8 @@
     "describes": "",
     "skills": [],
     "corPrimary": "#50894C",
-    "status": false
+    "status": false,
+    "link": ""
   },
   {
     "id": 7,
@@ -101,7 +160,8 @@
     "describes": "",
     "skills": [],
     "corPrimary": "#663287",
-    "status": false
+    "status": false,
+    "link": ""
   },
   {
     "id": 8,
@@ -110,7 +170,8 @@
     "describes": "",
     "skills": [],
     "corPrimary": "#BC933B",
-    "status": false
+    "status": false,
+    "link": ""
   },
   {
     "id": 9,
@@ -119,6 +180,7 @@
     "describes": "",
     "skills": [],
     "corPrimary": "#FCFEFF",
-    "status": false
+    "status": false,
+    "link": ""
   }
 ]

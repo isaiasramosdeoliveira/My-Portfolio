@@ -61,6 +61,7 @@ const PageProjects = () => {
               describe={project.describes}
               img={project.img}
               status={project.status}
+              link={project.link}
             />
           ))}
         </div>
