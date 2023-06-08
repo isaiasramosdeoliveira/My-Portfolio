@@ -23,9 +23,8 @@ const Container = styled.section`
     position: relative;
     ${transition200}
     align-items:start;
-    justify-content:center;
     overflow-x: hidden;
-    padding: 20px 20px 100px 20px;
+    padding: 20px 0px 100px 15px;
     height: 95%;
     width: 100%;
     .project {
