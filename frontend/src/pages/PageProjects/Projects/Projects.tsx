@@ -10,7 +10,8 @@ import Loading from "components/Loading/Loading";
 const Container = styled.div`
   padding: 20px;
   overflow: hidden;
-  margin: 10px;
+  margin: 20px;
+  min-width: 270px;
   max-width: 270px;
   flex-grow: 1;
   height: 370px;
@@ -71,7 +72,7 @@ const Container = styled.div`
         padding: 15px;
       }
       ${center}
-      width: 115px;
+      width: 120px;
       white-space: nowrap;
     }
   }
