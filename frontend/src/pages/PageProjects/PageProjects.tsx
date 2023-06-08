@@ -22,6 +22,7 @@ const Container = styled.section`
     flex-wrap:wrap;
     position: relative;
     ${transition200}
+    justify-content:center;
     align-items:start;
     overflow-x: hidden;
     padding: 20px 0px 100px 15px;
