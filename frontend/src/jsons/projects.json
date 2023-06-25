@@ -7,13 +7,13 @@
     "skills": [
       {
         "id": 1,
-        "title": "Next.js",
+        "title": "Next",
         "img": "../../assets/imgs/skills/next.svg"
       },
       {
         "id": 2,
-        "title": "Styled Components",
-        "img": "../../assets/imgs/skills/styled-components.svg"
+        "title": "Tailwind CSS",
+        "img": "../../assets/imgs/skills/tailwindcss.svg"
       },
       {
         "id": 3,
@@ -48,7 +48,7 @@
     ],
     "corPrimary": "#595191",
     "status": false,
-    "link": ""
+    "link": "https://open-space-iro.vercel.app/"
   },
   {
     "id": 2,
@@ -78,7 +78,7 @@
       },
       {
         "id": 5,
-        "title": "Nest.js",
+        "title": "Nest",
         "img": "../../assets/imgs/skills/nest.svg"
       },
       {
@@ -90,35 +90,66 @@
     "functionalities": [
       {
         "id": 1,
-        "functionalitie": "Contrato de serviços"
+        "functionalitie": "Contrato de serviços."
       },
       {
         "id": 2,
-        "functionalitie": "Compra de itens"
+        "functionalitie": "Compra de itens."
       },
       {
         "id": 3,
-        "functionalitie": "Rastrear entregas"
+        "functionalitie": "Rastrear entregas."
       },
       {
         "id": 4,
-        "functionalitie": "Fazer login"
+        "functionalitie": "Fazer login."
       },
       {
         "id": 5,
-        "functionalitie": "Gerenciamento de pagamentos"
+        "functionalitie": "Gerenciamento de pagamentos."
       }
     ],
     "corPrimary": "#07747F",
     "status": false,
-    "link": "https://green-loop.vercel.app/"
+    "link": "https://green-loop-iro.vercel.app/"
   },
   {
     "id": 3,
     "title": "Analyzer Shark",
     "img": "../../assets/imgs/projects/analyzer_shark.jpg",
     "describes": "",
-    "skills": [],
+    "skills": [
+      {
+        "id": 1,
+        "title": "Next",
+        "img": "../../assets/imgs/skills/next.svg"
+      },
+      {
+        "id": 2,
+        "title": "MongoDB",
+        "img": "../../assets/imgs/skills/mongodb.svg"
+      },
+      {
+        "id": 3,
+        "title": "Redux",
+        "img": "../../assets/imgs/skills/redux.svg"
+      },
+      {
+        "id": 4,
+        "title": "TypeScript",
+        "img": "../../assets/imgs/skills/typescript.svg"
+      },
+      {
+        "id": 5,
+        "title": "Nest",
+        "img": "../../assets/imgs/skills/nest.svg"
+      },
+      {
+        "id": 6,
+        "title": "Emotion",
+        "img": "../../assets/imgs/skills/emotion.png"
+      }
+    ],
     "corPrimary": "#0984A2",
     "status": false,
     "link": ""
@@ -127,8 +158,53 @@
     "id": 4,
     "title": "Attention Rare",
     "img": "../../assets/imgs/projects/attention_rare.jpg",
-    "describes": "",
-    "skills": [],
+    "describes": "Um site de gerenciamento de gastos e pagamento de faturas.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Next",
+        "img": "../../assets/imgs/skills/next.svg"
+      },
+      {
+        "id": 2,
+        "title": "Firebase",
+        "img": "../../assets/imgs/skills/firebase.svg"
+      },
+      {
+        "id": 3,
+        "title": "Redux",
+        "img": "../../assets/imgs/skills/redux.svg"
+      },
+      {
+        "id": 4,
+        "title": "TypeScript",
+        "img": "../../assets/imgs/skills/typescript.svg"
+      },
+      {
+        "id": 5,
+        "title": "Nest",
+        "img": "../../assets/imgs/skills/nest.svg"
+      },
+      {
+        "id": 6,
+        "title": "Emotion",
+        "img": "../../assets/imgs/skills/emotion.png"
+      }
+    ],
+    "functionalities": [
+      {
+        "id": 1,
+        "functionalitie": "Pagar as faturas."
+      },
+      {
+        "id": 2,
+        "functionalitie": "Gerenciar os gastos."
+      },
+      {
+        "id": 3,
+        "functionalitie": "Fazer investimentos."
+      }
+    ],
     "corPrimary": "#2B2B2B",
     "status": false,
     "link": ""
@@ -137,9 +213,59 @@
     "id": 5,
     "title": "Advice Pro",
     "img": "../../assets/imgs/projects/advice_pro.jpg",
-    "describes": "",
-    "skills": [],
-    "corPrimary": "#C61A52",
+    "describes": "Um site de gerenciamento de projetos.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Angular",
+        "img": "../../assets/imgs/skills/angular.svg"
+      },
+      {
+        "id": 2,
+        "title": "Docker",
+        "img": "../../assets/imgs/skills/docker.png"
+      },
+      {
+        "id": 3,
+        "title": "Redux",
+        "img": "../../assets/imgs/skills/redux.svg"
+      },
+      {
+        "id": 4,
+        "title": "TypeScript",
+        "img": "../../assets/imgs/skills/typescript.svg"
+      },
+      {
+        "id": 5,
+        "title": "Nest.js",
+        "img": "../../assets/imgs/skills/nest.svg"
+      },
+      {
+        "id": 6,
+        "title": "PostgreSQL",
+        "img": "../../assets/imgs/skills/postgresql.svg"
+      },
+      {
+        "id": 7,
+        "title": "Emotion",
+        "img": "../../assets/imgs/skills/emotion.png"
+      }
+    ],
+    "functionalities": [
+      {
+        "id": 1,
+        "functionalitie": "Gerenciar vários projetos."
+      },
+      {
+        "id": 2,
+        "functionalitie": "Monitorar ação dos membros."
+      },
+      {
+        "id": 3,
+        "functionalitie": "Definir prioridade, data e horário de cada tarefa."
+      }
+    ],
+    "corPrimary": "#A31A3F",
     "status": false,
     "link": ""
   },
@@ -147,8 +273,58 @@
     "id": 6,
     "title": "Messy",
     "img": "../../assets/imgs/projects/messy.jpg",
-    "describes": "",
-    "skills": [],
+    "describes": "Um site de gerenciamento escolar.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Vue",
+        "img": "../../assets/imgs/skills/vue.svg"
+      },
+      {
+        "id": 2,
+        "title": "Docker",
+        "img": "../../assets/imgs/skills/docker.png"
+      },
+      {
+        "id": 3,
+        "title": "Recoil",
+        "img": "../../assets/imgs/skills/recoil.svg"
+      },
+      {
+        "id": 4,
+        "title": "TypeScript",
+        "img": "../../assets/imgs/skills/typescript.svg"
+      },
+      {
+        "id": 5,
+        "title": "Nest.js",
+        "img": "../../assets/imgs/skills/nest.svg"
+      },
+      {
+        "id": 6,
+        "title": "PostgreSQL",
+        "img": "../../assets/imgs/skills/postgresql.svg"
+      },
+      {
+        "id": 7,
+        "title": "Tailwind CSS",
+        "img": "../../assets/imgs/skills/tailwindcss.svg"
+      }
+    ],
+    "functionalities": [
+      {
+        "id": 1,
+        "functionalitie": "Gerenciar as notas dos alunos."
+      },
+      {
+        "id": 2,
+        "functionalitie": "Gerenciar as matrículas dos alunos."
+      },
+      {
+        "id": 3,
+        "functionalitie": "Definir e gerenciar os eventos da escola."
+      }
+    ],
     "corPrimary": "#50894C",
     "status": false,
     "link": ""

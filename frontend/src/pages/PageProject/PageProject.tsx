@@ -61,6 +61,7 @@ const PageProject = () => {
         ul {
           padding-left: 20px;
           li {
+            list-style: circle;
             margin: 8px 0px;
           }
         }
