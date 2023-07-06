@@ -1,4 +1,3 @@
-import { center } from "global/utils/center";
 import React, { useState, lazy, Suspense } from "react";
 import styled from "styled-components";
 import { transition200 } from "global/utils/transitions";

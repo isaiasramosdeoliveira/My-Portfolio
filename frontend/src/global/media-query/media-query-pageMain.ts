@@ -26,9 +26,20 @@ export const media_medio_desktop = `
 // Media tablet
 export const media_tablet = `
 @media (max-width: 798px) {
+  flex-wrap:wrap;
   .box{
     min-width: 100%;
     gap:20px;
+    &:nth-child(1) {
+      order:3;
+      border-right: none;
+    }
+    &:nth-child(3) {
+      border-left: none;
+    }
+    h2 {
+      margin-top:12px;
+    }
   }
 }
 `
@@ -82,11 +93,11 @@ export const media_mini_tablet = `
 // Media para mobile
 export const media_mobile = `
 @media (max-width: 415px) {
-  height: 95%;
-  overflow:hidden;
+  height: 90%;
   .profile{
     img{
-      width: 320px;
+      width: 300px;
+      height:300px;
       margin-top:0px;
     }
   }
@@ -102,29 +113,17 @@ export const media_mobile = `
       }
     }
   }
-  .socialMedia{
-    max-width:325px;
-    a {
-      .btn {
-        max-width: 157px;
-        padding: 15px;
-        justify-content:start;
-        gap: 10px;
-        p {
-          display: block;
-        }
-        .icon {
-          margin: -10px 0px;
-          font-size: 25px;
-        }
+  .btns{
+    .socialMedia{
+      .btn{
+        min-width: 148px;
       }
-      }
+    }
   }
   footer {
     font-family: "Dancing Script", cursive;
-    font-size: 30px;
+    font-size: 26px;
     position: absolute;
-    top: 335px;
     height: 40px;
   }
 }

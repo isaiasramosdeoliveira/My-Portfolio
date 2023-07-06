@@ -1,0 +1,36 @@
+[
+  {
+    "skills": [
+      {
+        "id": 1,
+        "url": "./assets/imgs/skills/vue.svg"
+      },
+      {
+        "id": 2,
+        "url": "./assets/imgs/skills/next.svg"
+      },
+      {
+        "id": 3,
+        "url": "./assets/imgs/skills/nest.svg"
+      },
+      {
+        "id": 4,
+        "url": "./assets/imgs/skills/docker.png"
+      }
+    ],
+    "dates": [
+      {
+        "date": "05/04"
+      },
+      {
+        "date": "02/05"
+      },
+      {
+        "date": "01/06"
+      },
+      {
+        "date": "01/07"
+      }
+    ]
+  }
+]
