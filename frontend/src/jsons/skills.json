@@ -57,12 +57,18 @@
           },
           {
             "id": 4,
+            "title": "Vanilla Extract",
+            "img": "./assets/imgs/skills/vanilla_extract.svg",
+            "link": "https://vanilla-extract.style/documentation/getting-started/"
+          },
+          {
+            "id": 5,
             "title": "Recoil",
             "img": "./assets/imgs/skills/recoil.svg",
             "link": "https://recoiljs.org/"
           },
           {
-            "id": 5,
+            "id": 6,
             "title": "Emotion",
             "img": "./assets/imgs/skills/emotion.png",
             "link": "https://emotion.sh/docs/introduction"
@@ -93,21 +99,9 @@
           },
           {
             "id": 4,
-            "title": "Tailwind",
+            "title": "Tailwind CSS",
             "img": "./assets/imgs/skills/tailwindcss.svg",
             "link": "https://tailwindcss.com/"
-          },
-          {
-            "id": 5,
-            "title": "Jest",
-            "img": "./assets/imgs/skills/jest.svg",
-            "link": "https://jestjs.io/pt-BR/"
-          },
-          {
-            "id": 6,
-            "title": "Testing Library ",
-            "img": "./assets/imgs/skills/Testing-Library.svg",
-            "link": "https://testing-library.com/"
           }
         ]
       },

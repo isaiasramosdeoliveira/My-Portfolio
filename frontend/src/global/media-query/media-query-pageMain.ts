@@ -32,7 +32,10 @@ export const media_tablet = `
     gap:20px;
     &:nth-child(1) {
       order:3;
-      border-right: none;
+      border: none;
+    }
+    &:nth-child(2) {
+      border:none;
     }
     &:nth-child(3) {
       border-left: none;

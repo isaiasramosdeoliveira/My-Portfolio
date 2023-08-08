@@ -34,7 +34,7 @@ const Container = styled.section`
       }
       .line {
         width: 43%;
-        padding: 1px;
+        padding: 0.5px;
         background: ${({ theme }) =>
           theme.content.pageSkills.skills.bgDescribe};
       }
@@ -71,7 +71,7 @@ const PageSkills = () => {
             ))}
           </div>
 
-          <span className="range">
+          {/* <span className="range">
             <span className="line"></span>
             <span className="text">Back-end </span>
             <span className="line"></span>
@@ -97,7 +97,7 @@ const PageSkills = () => {
                 <Groups title={skill.title} dice={skill.groups} />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </Suspense>
     </Container>

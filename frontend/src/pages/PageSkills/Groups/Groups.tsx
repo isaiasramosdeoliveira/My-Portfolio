@@ -8,7 +8,7 @@ const Container = styled.div`
   padding-top: 0px;
   width: 202px;
   height: 210px;
-  border: 2px solid ${({ theme }) => theme.content.pageSkills.skills.bgDescribe};
+  border: 1px solid ${({ theme }) => theme.content.pageSkills.skills.bgDescribe};
   border-radius: 5px;
   position: relative;
   .title {
