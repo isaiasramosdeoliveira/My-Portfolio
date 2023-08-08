@@ -5,7 +5,7 @@ import {
   media_tablet,
 } from "global/media-query/media-query-pageProject";
 import { center } from "global/utils/center";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 import getOnProject from "ts/projects/getOnProject";
@@ -18,6 +18,9 @@ const PageProject = () => {
   const [dice] = useState(getOnProject(Number(id)));
   const { title, img, corPrimary, skills, describes, functionalities } =
     dice[0];
+    useEffect(() => {
+      navigate("/projects")
+    }, [])
   const Container = styled.section`
     height: 100%;
     .header {

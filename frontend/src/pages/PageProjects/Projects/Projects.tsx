@@ -46,7 +46,7 @@ const Container = styled.div`
     height: 215px;
     border-radius: 5px;
   }
-  .btns {
+  .btns, .btns_disabled {
     ${center}
     padding: 10px;
     gap: 12px;
@@ -54,7 +54,7 @@ const Container = styled.div`
     border-top: 1px solid
       ${({ theme }) => theme.content.pageProjects.projects.top};
     background: ${({ theme }) =>
-      theme.content.pageProjects.projects.bgDescribe};
+    theme.content.pageProjects.projects.bgDescribe};
     .btn {
       border-top: 1px solid
         ${({ theme }) => theme.content.pageProjects.projects.top};
@@ -62,11 +62,11 @@ const Container = styled.div`
         ${({ theme }) => theme.content.pageProjects.projects.bottom};
       padding: 0px;
       background: ${({ theme }) =>
-        theme.content.pageProjects.projects.bgButton};
+    theme.content.pageProjects.projects.bgButton};
       &:hover {
         background: ${({ theme }) => theme.content.pageProjects.projects.hover};
       }
-      a {
+      a, p {
         color: ${({ theme }) => theme.content.pageProjects.projects.title};
         ${center}
         padding: 15px;
@@ -74,6 +74,14 @@ const Container = styled.div`
       ${center}
       width: 120px;
       white-space: nowrap;
+    }
+  }
+  .btns_disabled{
+    .btn{
+      cursor: not-allowed;
+      a{
+      cursor: not-allowed;
+      }
     }
   }
 `;
@@ -91,16 +99,30 @@ const Projects = ({ id, title, status, img, link }: IProjects) => {
           )}
         </div>
         <img src={img} alt={title} />
-        <div className="btns">
-          <Button className={`${"btn"}`}>
-            <a href={link} target="_blank" rel="noreferrer">
-              Ver projeto
-            </a>
-          </Button>
-          <Button className={`${"btn"}`}>
-            <Link to={`/projects/${id}`}>Descrição</Link>
-          </Button>
-        </div>
+        {
+          status ?
+            <div className="btns">
+              <Button className={`${"btn"}`}>
+                <a href={link} target="_blank" rel="noreferrer">
+                  Ver projeto
+                </a>
+              </Button>
+              <Button className={`${"btn"}`}>
+                <Link to={`/projects/${id}`}>Descrição</Link>
+              </Button>
+            </div>
+            :
+            <div className="btns_disabled">
+              <Button className={`${"btn"}`}>
+                <p>
+                  Ver projeto
+                </p>
+              </Button>
+              <Button className={`${"btn"}`}>
+                <p>Descrição</p>
+              </Button>
+            </div>
+        }
       </Suspense>
     </Container>
   );
